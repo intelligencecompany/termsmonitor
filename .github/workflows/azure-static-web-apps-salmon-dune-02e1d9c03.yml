@@ -20,13 +20,13 @@ jobs:
           submodules: true
           lfs: false
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '22'  # Set this to the version of Node.js you are using
+    #   - name: Setup Node.js
+    #     uses: actions/setup-node@v2
+    #     with:
+    #       node-version: '22'  # Set this to the version of Node.js you are using
 
-      - name: Install Dependencies
-        run: npm install
+    #   - name: Install Dependencies
+    #     run: npm install
 
     #   - name: Build Project
     #     run: npm run generate  # Use 'generate' for Nuxt static site generation
