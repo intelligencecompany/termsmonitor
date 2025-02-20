@@ -16,11 +16,9 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" class="hero-right">
-          <v-hover v-slot:default="{ isHovering }">
-            <v-responsive class="text-center" :elevation="isHovering ? 10 : 0">
+            <v-responsive class="text-center">
               <img src="/assets/speedometer.svg" alt="Speedometer Monitor" class="speedometer w-50" />
             </v-responsive>
-          </v-hover>
         </v-col>
       </v-row>
 
