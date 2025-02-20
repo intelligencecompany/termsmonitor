@@ -11,9 +11,9 @@
         <v-card class="pa-4" elevation="4">
           <v-card-title>Login</v-card-title>
           <v-card-text>
-            <v-form @submit.prevent="login">
-              <v-text-field v-model="email" label="Email" required></v-text-field>
-              <v-text-field v-model="password" label="Password" type="password" required></v-text-field>
+            <v-form @submit.prevent="handleLogin">
+              <v-text-field v-model="credentials.username" label="Username" required></v-text-field>
+              <v-text-field v-model="credentials.password" label="Password" type="password" required></v-text-field>
               <v-btn color="primary" type="submit">Login</v-btn>
             </v-form>
           </v-card-text>
@@ -25,32 +25,14 @@
 
 <script setup>
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import { useFetch } from '#app'
+import { useAuth } from '~/composables/useAuth'
 
-const email = ref('')
-const password = ref('')
-const router = useRouter()
+const credentials = ref({ username: '', password: '' })
+const { login } = useAuth()
 
-const login = async () => {
-  try {
-    const { data, error } = await useFetch('/api/auth/login', {
-      method: 'POST',
-      body: JSON.stringify({
-        email: email.value,
-        password: password.value
-      }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    if (error.value) {
-      throw new Error(error.value)
-    }
-    router.push('/dashboard')
-  } catch (error) {
-    console.error('An error occurred:', error)
-  }
+const handleLogin = async () => {
+  await login(credentials.value)
+  navigateTo('/')
 }
 </script>
 
