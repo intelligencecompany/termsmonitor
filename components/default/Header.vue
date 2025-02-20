@@ -3,9 +3,9 @@
         
       <v-container class="max-width">
         <v-row align="center">
+            <v-img src="/assets/speedometer.svg" max-height="40" max-width="40" contain></v-img>
             <router-link to="/" class="d-flex align-center no-underline">
-                <v-img src="/assets/speedometer.svg" max-height="40" max-width="40" contain></v-img>
-                <v-toolbar-title class="ml-2">Terms Monitor</v-toolbar-title>
+              <v-toolbar-title class="ml-2">Terms Monitor</v-toolbar-title>
             </router-link>
             <v-spacer />
             <v-btn text class="d-none d-md-flex" to="/product">Product</v-btn>
@@ -22,7 +22,7 @@
                         <v-list-item link to="/pricing">
                             <v-list-item-title>Pricing</v-list-item-title>
                         </v-list-item>
-                        <v-list-item link to="/blog">
+                        <v-list-item link to="/contact">
                             <v-list-item-title>Contact</v-list-item-title>
                         </v-list-item>
                         <v-list-item link to="/signup">
@@ -44,9 +44,6 @@
 .no-underline {
   text-decoration: none;
   color: inherit;
-}
-
-.v-app-bar {
   overflow: visible;
 }
 </style>

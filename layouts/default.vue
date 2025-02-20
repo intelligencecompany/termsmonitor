@@ -39,7 +39,7 @@ export default {
     height: 100%;
     background: url('/assets/brain2.svg') no-repeat center center;
     border-radius: 15px;
-    opacity: 0.1;
+    opacity: 0.05;
 }
 .hero {
     padding: 4rem 2rem;
