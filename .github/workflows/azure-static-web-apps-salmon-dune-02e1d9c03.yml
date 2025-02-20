@@ -37,7 +37,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_DUNE_02E1D9C03 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: 'upload'
-          app_build_command: 'npm run generate'  # This is the build command for Nuxt
+          # app_build_command: 'npm run generate'  # This is the build command for Nuxt
           app_location: '/'  # Set this to the location of your application code
           api_location: "" # Api source code path - optional
           output_location: 'dist'  # Ensure this matches the Nuxt output directory
