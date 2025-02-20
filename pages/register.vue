@@ -29,12 +29,4 @@ export default {
 </script>
 
 <style scoped>
-.hero {
-  padding: 4rem 2rem;
-  background: url('/path/to/abstract-shapes.svg') no-repeat center center, linear-gradient(to right, #e0eafc, #cfdef3);
-  background-size: cover;
-  position: relative;
-  border-radius: 15px;
-  text-align: center;
-}
 </style>
