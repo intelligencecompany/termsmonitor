@@ -39,8 +39,8 @@ jobs:
           action: 'upload'
           # app_build_command: 'npm run generate'  # This is the build command for Nuxt
           app_location: '/'  # Set this to the location of your application code
-          api_location: "" # Api source code path - optional
-          output_location: 'dist'  # Ensure this matches the Nuxt output directory
+          api_location: ".output/server" # Api source code path - optional
+          output_location: '.output/public'  # Ensure this matches the Nuxt output directory
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
