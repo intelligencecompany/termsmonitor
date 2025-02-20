@@ -1,4 +1,5 @@
 <template>
+  <div>
       <v-row class="hero">
         <v-col cols="12" md="6" class="hero-left">
           <h1 class="text-h2 font-weight-black text-secondary">Stay Compliant with Real-Time Terms Monitoring</h1>
@@ -168,12 +169,10 @@
         </v-col>
       </v-row>
     </section>
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'LandingPage'
-}
 </script>
 
 <style scoped>

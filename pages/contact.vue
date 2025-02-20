@@ -1,4 +1,5 @@
 <template>
+  <div>
       <v-row class="hero">
         <v-col cols="12">
           <h1 class="text-h2 font-weight-black text-secondary">Contact Us</h1>
@@ -30,6 +31,7 @@
           </v-card>
         </v-col>
       </v-row>
+      </div>
 </template>
 
 <script>

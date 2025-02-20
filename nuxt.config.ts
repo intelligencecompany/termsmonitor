@@ -3,6 +3,7 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   compatibilityDate: '2025-02-20',
   devtools: { enabled: true },
+  pages: true,
   build: {
     transpile: ['vuetify'],
   },
