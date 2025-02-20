@@ -10,15 +10,13 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { useAxios } from '@nuxtjs/axios'
 
 const data = ref(null)
-const axios = useAxios()
 
 onMounted(async () => {
   try {
-    const response = await axios.get('/some-endpoint')
-    data.value = response.data
+    const { data: responseData } = await useFetch('/some-endpoint')
+    data.value = responseData.value
   } catch (error) {
     console.error('An error occurred:', error)
   }

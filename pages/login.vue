@@ -26,21 +26,27 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { useAuth } from '@nuxt/auth-next'
+import { useFetch } from '#app'
 
 const email = ref('')
 const password = ref('')
 const router = useRouter()
-const auth = useAuth()
 
 const login = async () => {
   try {
-    await auth.loginWith('local', {
-      data: {
+    const { data, error } = await useFetch('/api/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({
         email: email.value,
         password: password.value
+      }),
+      headers: {
+        'Content-Type': 'application/json'
       }
     })
+    if (error.value) {
+      throw new Error(error.value)
+    }
     router.push('/dashboard')
   } catch (error) {
     console.error('An error occurred:', error)
