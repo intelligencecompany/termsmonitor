@@ -5,7 +5,7 @@
         <v-row align="center">
             <v-img src="/assets/speedometer.svg" max-height="40" max-width="40" contain></v-img>
             <router-link to="/" class="d-flex align-center no-underline">
-              <v-toolbar-title class="ml-2">Terms Monitor</v-toolbar-title>
+              <v-toolbar-title class="text-h5 ml-2 font-weight-black text-secondary">Terms Monitor</v-toolbar-title>
             </router-link>
             <v-spacer />
             <v-btn text class="d-none d-md-flex" to="/product">Product</v-btn>

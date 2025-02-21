@@ -172,7 +172,37 @@
   </div>
 </template>
 
-<script>
+<script setup>
+useSeoMeta({
+  title: 'Terms Monitor - Stay Compliant with Real-Time Terms Monitoring',
+  description: 'Stay compliant with real-time terms monitoring. Effortlessly track changes in terms and conditions, privacy policies and user agreements.',
+  keywords: 'terms monitoring, compliance, privacy policies, user agreements, SaaS',
+  ogTitle: 'Terms Monitor - Stay Compliant with Real-Time Terms Monitoring',
+  ogDescription: 'Stay compliant with real-time terms monitoring. Effortlessly track changes in terms and conditions, privacy policies and user agreements.',
+  ogImage: 'https://termsmonitor.com/assets/og-image.jpg',
+  ogUrl: 'https://termsmonitor.com',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Terms Monitor - Stay Compliant with Real-Time Terms Monitoring',
+  twitterDescription: 'Stay compliant with real-time terms monitoring. Effortlessly track changes in terms and conditions, privacy policies and user agreements.',
+  twitterImage: 'https://termsmonitor.com/assets/twitter-image.jpg',
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Terms Monitor",
+        "url": "https://termsmonitor.com",
+        "description": "Stay compliant with real-time terms monitoring. Effortlessly track changes in terms and conditions, privacy policies and user agreements.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://termsmonitor.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      })
+    }
+  ]
+})
 </script>
 
 <style scoped>

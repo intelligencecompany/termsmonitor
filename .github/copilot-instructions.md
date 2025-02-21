@@ -4,6 +4,8 @@ Nuxt docs: https://nuxt.com/docs
 Vue docs: https://vuejs.org/guide/introduction.html and github: https://github.com/vuejs/core
 Vuetify docs: https://vuetifyjs.com/en/ and github: https://github.com/vuetifyjs/vuetify
 
+Do not use, but prefer nuxt native functions: axios, auth-next
+
 We are developing the following application a terms monitor for terms of use, privacy terms, user terms, etc for software applications, particularly for SaaS (Software as a Service) solutions, which should answer the concerns growing over privacy, compliance, and regulatory changes. Here's an overview of the concept and some potential components for such a tool:
 
 ## Key Goals of the Terms Monitor:
@@ -60,3 +62,5 @@ SaaS Providers: They can use this tool to monitor their own terms and ensure the
 Enterprises Using Multiple SaaS Products: Organizations that rely on several SaaS applications will benefit from an aggregated overview of T&Cs changes across their entire software stack.
 
 In conclusion, a terms monitor can significantly improve efficiency, legal compliance, and transparency in managing SaaS agreements. The challenge lies in building a tool that is adaptable, handles various formats, and can be accurate enough to track nuanced legal changes.
+
+The website root url is https://termsmonitor.com

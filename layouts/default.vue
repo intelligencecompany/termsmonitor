@@ -12,16 +12,9 @@
   </v-app>
 </template>
 
-<script>
+<script setup>
 import Header from '~/components/default/Header.vue'
 import Footer from '~/components/default/Footer.vue'
-
-export default {
-  components: {
-    Header,
-    Footer,
-  }
-}
 </script>
 
 <style>
